@@ -9,3 +9,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Commons
+.container{
+    max-width: 1200px;
+    margin: auto;
+}

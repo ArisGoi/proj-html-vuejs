@@ -2,6 +2,8 @@
 // COLORS PALETTE
 $c-main: #fc7525; //Orange
 
+$white: #fff;
+
 $c-bw-0: #f6f7f1; //Spring Wood
 $c-bw-1: #afafaf; //Silver Chalice
 $c-bw-2: #6a6b6c; //Nevada
@@ -9,6 +11,8 @@ $c-bw-3: #262628; //Shark
 
 // Colors assignment
 $bg-body: $c-bw-0;
+
+$nav-text: $c-bw-3;
 
 // FONTS
 @mixin serif400{
@@ -26,4 +30,11 @@ $bg-body: $c-bw-0;
 @mixin sans600{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
+}
+
+// MAGIC
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
