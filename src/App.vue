@@ -4,8 +4,10 @@
 
     <main>
       <Hero/>
+      <!-- vv page vv -->
+      <foodieJournal/>
     </main>
-    
+
   </div>
 </template>
 
@@ -13,11 +15,14 @@
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 
+import foodieJournal from './components/index-comp/foodieJournal.vue'
+
 export default {
   name: 'App',
   components: {
     Header,
     Hero,
+    foodieJournal,
   }
 }
 </script>

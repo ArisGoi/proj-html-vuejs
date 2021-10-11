@@ -22,6 +22,9 @@ html {
 main{
     padding-top: calc(150px + 65px); //Header height
 }
+body{
+    background-color: $c-bw-0;
+}
 
 // BUTTONS
 [class^=btn]{

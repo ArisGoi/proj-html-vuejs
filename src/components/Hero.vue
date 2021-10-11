@@ -41,7 +41,7 @@ export default {
   padding: 46px;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 40px);
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $white;
@@ -57,7 +57,8 @@ export default {
     transform: inherit;
     border-radius: inherit;
     background-color: $c-main;
-    padding: 10px
+    padding: 10px;
+    font-size: 1.125rem;
   }
 
   h2{
