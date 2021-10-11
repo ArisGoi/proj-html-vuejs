@@ -36,9 +36,9 @@ $text-black: #262628;//Shark
 $text-gray: #6a6b6c;//Nevada
 $text-light: #f6f7f1;//Spring Wood
 
-@mixin title2 { //big title -- need FIX
+@mixin title2 { //big title
     @include serif400;
-    font-size: 20px;
+    font-size: 48px;
     color: $text-black;
 }
 @mixin title3 { //footer hero title -- need FIX
@@ -46,9 +46,9 @@ $text-light: #f6f7f1;//Spring Wood
     font-size: 20px;
     color: $text-black;
 }
-@mixin title4 { //section title -- need FIX
+@mixin title4 { //section title
     @include sans600;
-    font-size: 20px;
+    font-size: 18px;
     color: $text-black;
     text-transform: uppercase;
 }
@@ -57,9 +57,9 @@ $text-light: #f6f7f1;//Spring Wood
     font-size: 20px;
     color: $text-black;
 }
-@mixin subInfo { //subtitle -- need FIX
+@mixin subInfo { //subtitle
     @include serif400;
-    font-size: 12px;
+    font-size: 16px;
     color: $text-black;
 }
 @mixin corpo { //body text -- need FIX

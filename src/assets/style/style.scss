@@ -19,6 +19,9 @@ html {
     max-width: 1200px;
     margin: auto;
 }
+main{
+    padding-top: calc(150px + 65px); //Header height
+}
 
 // BUTTONS
 [class^=btn]{
