@@ -1,0 +1,29 @@
+
+// COLORS PALETTE
+$c-main: #fc7525; //Orange
+
+$c-bw-0: #f6f7f1; //Spring Wood
+$c-bw-1: #afafaf; //Silver Chalice
+$c-bw-2: #6a6b6c; //Nevada
+$c-bw-3: #262628; //Shark
+
+// Colors assignment
+$bg-body: $c-bw-0;
+
+// FONTS
+@mixin serif400{
+    font-family: 'Vidaloka', serif;
+    font-weight: 400;
+}
+@mixin sans300{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+@mixin sans400{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+@mixin sans600{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
