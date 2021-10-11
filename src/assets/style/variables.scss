@@ -11,10 +11,9 @@ $c-bw-3: #262628; //Shark
 
 // Colors assignment
 $bg-body: $c-bw-0;
-
 $nav-text: $c-bw-3;
 
-// FONTS
+// FONTS FAMILY
 @mixin serif400{
     font-family: 'Vidaloka', serif;
     font-weight: 400;
@@ -30,6 +29,43 @@ $nav-text: $c-bw-3;
 @mixin sans600{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
+}
+
+// FONTS
+$text-black: #262628;//Shark
+$text-gray: #6a6b6c;//Nevada
+$text-light: #f6f7f1;//Spring Wood
+
+@mixin title2 { //big title -- need FIX
+    @include serif400;
+    font-size: 20px;
+    color: $text-black;
+}
+@mixin title3 { //footer hero title -- need FIX
+    @include serif400;
+    font-size: 20px;
+    color: $text-black;
+}
+@mixin title4 { //section title -- need FIX
+    @include sans600;
+    font-size: 20px;
+    color: $text-black;
+    text-transform: uppercase;
+}
+@mixin title5 { //article-title -- need FIX
+    @include serif400;
+    font-size: 20px;
+    color: $text-black;
+}
+@mixin subInfo { //subtitle -- need FIX
+    @include serif400;
+    font-size: 12px;
+    color: $text-black;
+}
+@mixin corpo { //body text -- need FIX
+    @include sans400;
+    font-size: 16px;
+    color: $text-gray;
 }
 
 // MAGIC

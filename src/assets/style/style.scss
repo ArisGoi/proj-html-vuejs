@@ -19,3 +19,23 @@ html {
     max-width: 1200px;
     margin: auto;
 }
+
+// BUTTONS
+[class^=btn]{
+    border: none;
+    padding: 10px 20px;
+    text-align: center
+}
+.btn-1, .btn-2{
+    @include sans600;
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+.btn-1{
+    background-color: $c-main;
+    color: $text-light;
+}
+.btn-2{
+    background-color: $c-bw-1;
+    color: $text-black;
+}
