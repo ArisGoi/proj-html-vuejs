@@ -42,6 +42,11 @@ body{
 .btn-1{
     background-color: $c-main;
     color: $text-light;
+    img{
+        height: 15px;
+        transform: translateY(.125rem);
+        margin: 0 .3125rem;
+    }
 }
 .btn-2{
     background-color: $c-bw-1;

@@ -13,6 +13,7 @@
         </div>
 
         <div class="content">
+            <!-- LEFT SIDE -->
             <div class="side-left">
 
                 <div class="big-article">
@@ -41,7 +42,20 @@
 
                 <button class="btn-2">Load More Posts</button>
             </div>
-            <div class="side-right"></div>
+            <!-- RIGHT SIDE -->
+            <div class="side-right">
+                <div class="adv-1">
+                    <img src="../../assets/images/ad-bg.jpg" alt="background image of adv about our latest ecipes">
+                    <p>View our latest recipe</p>
+                </div>
+                <div class="adv-2">
+                    <img src="../../assets/images/singapore-featured-image.jpg" alt="background image of adv about Singapore - City Guide">
+                    <button class="btn-1">
+                        <img src="../../assets/icons/world.svg" alt="">
+                        View all city guides
+                    </button>
+                </div>
+            </div>
         </div>
 
       </div>
@@ -80,12 +94,6 @@ export default {
         position: absolute;
         top: 0;
         right: 0;
-
-        img{
-            height: 15px;
-            transform: translateY(.125rem);
-            margin-left: .3125rem;
-        }
     }
 }
 
@@ -161,8 +169,44 @@ export default {
 
 .side-right{
     width: calc(35% - 20px);
-    height: 300px;
     border: 1px solid royalblue;
+
+    .adv-1, .adv-2{
+        width: 100%;
+        margin-bottom: 40px;
+        position: relative;
+        & > img{
+            @include fit-cover;
+            display: block;
+        }
+    }
+    .adv-1 p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 40%;
+        @include title4;
+        text-align: center;
+    }
+    .adv-2{
+        button{
+            width: 100%;
+        }
+        &::after{
+            content: 'City guide: Singapore';
+            color: white;
+            background-color: black;
+            padding: 10px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+
+            @include sans600;
+            font-size: 1.375rem;
+        }
+    }
 }
 
 </style>
