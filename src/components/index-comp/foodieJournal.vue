@@ -3,8 +3,8 @@
   <section id="foodieJournal">
 
     <div class="headline">
-    <div class="hr"></div>
-    <h2>Foodie Journal</h2>
+      <div class="hr"></div>
+      <h2>Foodie Journal</h2>
     </div>
     <div class="content">
       <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>

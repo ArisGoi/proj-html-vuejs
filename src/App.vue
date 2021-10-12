@@ -6,8 +6,11 @@
       <Hero/>
       <!-- vv page vv -->
       <foodieJournal/>
+      <popularRecipes/>
     </main>
 
+    <!-- Da rimuovere vv -->
+    <div style="height: 400px"></div>
   </div>
 </template>
 
@@ -16,6 +19,7 @@ import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 
 import foodieJournal from './components/index-comp/foodieJournal.vue'
+import popularRecipes from './components/index-comp/popularRecipes.vue'
 
 export default {
   name: 'App',
@@ -23,6 +27,7 @@ export default {
     Header,
     Hero,
     foodieJournal,
+    popularRecipes,
   }
 }
 </script>
