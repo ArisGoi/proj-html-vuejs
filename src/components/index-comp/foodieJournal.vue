@@ -7,10 +7,9 @@
     <h2>Foodie Journal</h2>
     </div>
     <div class="content">
-      <!-- Vanno sostituiti gli elementi in "content" con una <CARD/> -->
-      <div class="segnaposto" style="height:100px; width:80px; background-color: blue"></div>
-      <div class="segnaposto" style="height:100px; width:80px; background-color: blue"></div>
-      <div class="segnaposto" style="height:100px; width:80px; background-color: blue"></div>
+      <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>
+      <cardSmall img="fi-roundup.jpg" title="Roundup: My New Favourite Recipes For Healthy Living" authorDate="By admin | March 25th, 2019"/>
+      <cardSmall img="fi-toasts.jpg" title="Why These Toasts with Tea are My New Favorite" authorDate="By admin | March 25th, 2019"/>
     </div>
 
   </section>
@@ -18,11 +17,13 @@
 </template>
 
 <script>
+import cardSmall from './cardSmall.vue'
+
 export default {
   name: 'foodieJournal',
-  // props: {
-  //   msg: String
-  // }
+  components: {
+    cardSmall,
+  }
 }
 </script>
 
