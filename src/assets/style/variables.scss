@@ -8,6 +8,7 @@ $c-bw-0: #f6f7f1; //Spring Wood
 $c-bw-1: #afafaf; //Silver Chalice
 $c-bw-2: #6a6b6c; //Nevada
 $c-bw-3: #262628; //Shark
+$c-bw-4: #f0eeeb;
 
 // Colors assignment
 $bg-body: $c-bw-0;
@@ -62,9 +63,9 @@ $text-light: #f6f7f1;//Spring Wood
     font-size: 1rem;
     color: $text-black;
 }
-@mixin corpo { //body text -- need FIX
+@mixin corpo { //body text
     @include sans400;
-    font-size: 16px;
+    font-size: 1rem;
     color: $text-gray;
 }
 

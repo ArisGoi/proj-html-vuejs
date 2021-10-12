@@ -44,10 +44,12 @@
             </div>
             <!-- RIGHT SIDE -->
             <div class="side-right">
+
                 <div class="adv-1">
                     <img src="../../assets/images/ad-bg.jpg" alt="background image of adv about our latest ecipes">
                     <p>View our latest recipe</p>
                 </div>
+
                 <div class="adv-2">
                     <img src="../../assets/images/singapore-featured-image.jpg" alt="background image of adv about Singapore - City Guide">
                     <button class="btn-1">
@@ -55,6 +57,12 @@
                         View all city guides
                     </button>
                 </div>
+
+                <!-- Search Bar -->
+                <searchBar/>
+
+                <!-- Social Box -->
+                <socialBox/>
             </div>
         </div>
 
@@ -64,11 +72,15 @@
 
 <script>
 import cardSmall from './cardSmall.vue'
+import searchBar from './search.vue'
+import socialBox from './socialBox.vue'
 
 export default {
   name: 'farmToTable',
   components:{
       cardSmall,
+      searchBar,
+      socialBox,
   },
   // props: {
   //   msg: String
@@ -169,7 +181,6 @@ export default {
 
 .side-right{
     width: calc(35% - 20px);
-    border: 1px solid royalblue;
 
     .adv-1, .adv-2{
         width: 100%;
