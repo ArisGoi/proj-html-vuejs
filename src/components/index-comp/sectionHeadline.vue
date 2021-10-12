@@ -18,12 +18,12 @@ export default {
 @import '../../assets/style/style.scss';
 
 .container{
-    max-width: 700px !important;
+    max-width: 600px !important;
 }
 
 .headline{
     text-align: center;
-    margin: 35px 0;
+    margin: 85px 0px 35px 0px;
     h2{
         @include title4;
         margin-bottom: 26px;

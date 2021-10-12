@@ -7,6 +7,8 @@
       <!-- vv page vv -->
       <foodieJournal/>
       <popularRecipes/>
+      <culinaryCollection/>
+      <farmToTable/>
     </main>
 
     <!-- Da rimuovere vv -->
@@ -20,6 +22,8 @@ import Hero from './components/Hero.vue'
 
 import foodieJournal from './components/index-comp/foodieJournal.vue'
 import popularRecipes from './components/index-comp/popularRecipes.vue'
+import culinaryCollection from './components/index-comp/culinaryCollection.vue'
+import farmToTable from './components/index-comp/farmToTable.vue'
 
 export default {
   name: 'App',
@@ -28,6 +32,8 @@ export default {
     Hero,
     foodieJournal,
     popularRecipes,
+    culinaryCollection,
+    farmToTable,
   }
 }
 </script>

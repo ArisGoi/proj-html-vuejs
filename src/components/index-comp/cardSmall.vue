@@ -42,6 +42,7 @@ export default {
 
 h3{
   @include title5;
+  margin-bottom: 10px
 }
 p{
   @include corpo;

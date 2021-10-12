@@ -35,6 +35,7 @@ export default {
   position: relative;
   padding: 30px;
   background-color: $white;
+  margin-bottom: -35px;
 }
 
 .headline{
