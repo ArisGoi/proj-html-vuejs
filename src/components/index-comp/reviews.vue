@@ -103,7 +103,6 @@ ul.review-list{
       width: 50px;
       border-radius: 50%;
       margin-right: 10px;
-      background-color: cadetblue;
       overflow: hidden;
       img{
         @include fit-cover;

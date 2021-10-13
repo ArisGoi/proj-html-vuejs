@@ -1,6 +1,44 @@
 <template>
   <footer>
-    
+    <div class="f-imgs"></div>
+
+    <div class="f-top">
+      <div class="container">
+        <div class="block">
+          <img class="logo" src="../assets/images/avada-food-logo-mob-2x.png" alt="avada food logo">
+        </div>
+        <div class="block">
+          <ul>
+            <li><a href="">Recipes</a></li>
+            <li><a href="">Places</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Contact</h3>
+          <ul>
+            <li>775 New York Ave, Brooklyn, Kings, New York 11203</li>
+            <li>+0100-505-0000</li>
+            <li>info@your-domain.com</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Get our App!</h3>
+          <img src="" alt="Click to download our app from GooglePlay">
+          <img src="" alt="Click to download our app from AppStore">
+        </div>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <p>© Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All rights Reserved | Powered by Wordpress</p>
+      <a href="#" class="BackToTop">
+        <img src="../assets/icons/arrow-up.svg" alt="arrow up icon">
+      </a>
+    </div>
+
   </footer>
 </template>
 
@@ -17,7 +55,54 @@ export default {
 @import '../assets/style/variables.scss';
 
 footer{
-  
+  margin-top: 40px;
+}
+.container{
+  display: flex;
+}
+.f-top{
+  padding: 30px 0;
+  background-color: $white;
+
+  .block{
+    width: calc(100% / 4);
+    padding: 15px;
+    border-right: 1px solid $c-bw-1;
+
+    &:last-child{
+      border-right: none;
+    }
+  }
+
+  img.logo{
+      width: 100%;
+  }
+}
+
+
+.f-bottom{
+  height: 60px;
+  @include flex-center;
+  @include corpo;
+  position: relative;
+  margin: 15px 0;
+
+  a.BackToTop{
+    @include flex-center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $c-bw-3;
+
+    img{
+      width: 48%;
+    }
+  }
 }
 
 </style>

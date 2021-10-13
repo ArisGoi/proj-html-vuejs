@@ -11,14 +11,14 @@
       <farmToTable/>
     </main>
 
-    <!-- Da rimuovere vv -->
-    <div style="height: 400px"></div>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
+import Footer from './components/Footer.vue'
 
 import foodieJournal from './components/index-comp/foodieJournal.vue'
 import popularRecipes from './components/index-comp/popularRecipes.vue'
@@ -34,6 +34,7 @@ export default {
     popularRecipes,
     culinaryCollection,
     farmToTable,
+    Footer,
   }
 }
 </script>
