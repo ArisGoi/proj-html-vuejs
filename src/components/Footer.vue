@@ -1,6 +1,11 @@
 <template>
   <footer>
-    <div class="f-imgs"></div>
+    <div class="f-imgs">
+      <div><img src="../assets/images/Yogurt-Nan.jpg" alt=""></div>
+      <div><img src="../assets/images/Mixed-fruits.jpg" alt=""></div>
+      <div><img src="../assets/images/r-rachel-park-366508-unsplash-min.jpg" alt=""></div>
+      <div><img src="../assets/images/r-michelle-tsang-500721-unsplash-min.jpg" alt=""></div>
+    </div>
 
     <div class="f-top">
       <div class="container">
@@ -86,6 +91,14 @@ footer{
 .container{
   display: flex;
 }
+
+.f-imgs{
+  display: flex;
+  img{
+    @include fit-cover;
+  }
+}
+
 .f-top{
   padding: 30px 0;
   background-color: $white;
