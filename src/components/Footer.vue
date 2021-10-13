@@ -1,5 +1,9 @@
 <template>
   <footer>
+    <!-- Footer Hero -->
+    <FooterHero/>
+
+    <!-- Footer -->
     <div class="f-imgs">
       <div><img src="../assets/images/Yogurt-Nan.jpg" alt=""></div>
       <div><img src="../assets/images/Mixed-fruits.jpg" alt=""></div>
@@ -74,8 +78,12 @@
 </template>
 
 <script>
+import FooterHero from './FooterHero.vue'
 export default {
   name: 'Footer',
+  components:{
+    FooterHero,
+  }
   // props: {
   //   msg: String
   // }
