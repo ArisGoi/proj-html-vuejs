@@ -33,12 +33,12 @@
                   </div>
                 </div>
 
-                <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="single-post-img3.jpg" title="Food Corner: Top Japanese Restaurants for Sushi" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall img="fi-roundup.jpg" title="Roundup: My New Favorite Recipes For Healthy Living" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall img="fi-korean-food.jpg" title="Meal Prep: Korean Bibimbap with Kimchi" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall img="fi-toasts.jpg" title="Why These Toasts with Tea are My New Favorite" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall img="fi-street-food.jpg" title="Exploring Street Food in Bangkok" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall img="fi-organic-breakfast.jpg" title="Organic Choices For Healthier Living" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall img="fi-water-side-rest.jpg" title="5 Waterside Restaurants in Istanbul for Special Events" authorDate="By admin | March 25th, 2019"/>
 
                 <button class="btn-2">Load More Posts</button>
             </div>
@@ -63,6 +63,8 @@
 
                 <!-- Social Box -->
                 <socialBox/>
+
+                <reviews/>
             </div>
         </div>
 
@@ -74,6 +76,7 @@
 import cardSmall from './cardSmall.vue'
 import searchBar from './search.vue'
 import socialBox from './socialBox.vue'
+import reviews from './reviews.vue'
 
 export default {
   name: 'farmToTable',
@@ -81,6 +84,7 @@ export default {
       cardSmall,
       searchBar,
       socialBox,
+      reviews,
   },
   // props: {
   //   msg: String

@@ -24,20 +24,20 @@ main{
     padding-top: calc(150px + 65px); //Header height
 }
 body{
-    background-color: $c-bw-0;
+    background-color: $bg-body;
 }
 
 // BUTTONS
 [class^=btn]{
     border: none;
     padding: 10px 20px;
-    text-align: center
+    text-align: center;
+    cursor: pointer;
 }
 .btn-1, .btn-2{
     @include sans600;
     font-size: .875rem;
     text-transform: uppercase;
-    cursor: pointer;
 }
 .btn-1{
     background-color: $c-main;
