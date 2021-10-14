@@ -2,6 +2,10 @@
   <div class="card-small">
     <div class="img">
       <img :src="require(`../../assets/images/${img}`)" alt="">
+      <div class="hover-img-link">
+        <img src="../../assets/icons/link.svg" alt="">
+        <p>{{title}}</p>
+      </div>
     </div>
     <div class="text">
       <h3>{{title}}</h3>
@@ -34,6 +38,7 @@ export default {
   width: 100%;
   height: 230px;
   overflow: hidden;
+  position: relative;
 
   img{
     @include fit-cover;

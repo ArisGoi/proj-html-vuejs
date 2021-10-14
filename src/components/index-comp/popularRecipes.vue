@@ -8,7 +8,11 @@
 
               <div class="big-recipe">
                   <div class="img">
-                      <img src="../../assets/images/Yogurt-Nan.jpg" alt="">
+                    <img src="../../assets/images/Yogurt-Nan.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Lunch Favorite with Salad, Naan and Beans</p>
+                    </div>
                   </div>
                   <div class="body">
                       <h3>Lunch Favourite with Salad, Naan And Beans</h3>
@@ -67,6 +71,7 @@ export default {
         .img{
             width: 100%;
             height: 380px;
+            position: relative;
 
             img{
                 @include fit-cover;

@@ -19,9 +19,13 @@
                 <div class="big-article">
                     <div class="img">
                       <img src="../../assets/images/Yogurt-Nan.jpg" alt="">
+                        <div class="hover-img-link">
+                            <img src="../../assets/icons/link.svg" alt="">
+                            <p>Lunch Favorite with Salad, Naan and Beans</p>
+                        </div>
                   </div>
                   <div class="body">
-                      <h3>Food Corner: Top Japanese Restaurant for Sushi</h3>
+                      <h3>Lunch Favorite with Salad, Naan and Beans</h3>
                       <h5>By admin | March 25th, 2019</h5>
                       <div class="hr"></div>
                       <p>Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vita elementum ex.</p>
@@ -139,6 +143,7 @@ export default {
             width: 100%;
             height: 500px;
             img{ @include fit-cover; }
+            position: relative;
         }
 
         .body{
