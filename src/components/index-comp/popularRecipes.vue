@@ -25,14 +25,62 @@
               </div>
 
               <div class="others">
-                  <img src="../../assets/images/Mixed-fruits.jpg" alt="">
-                  <img src="../../assets/images/r-rachel-park-366508-unsplash-min.jpg" alt="">
-                  <img src="../../assets/images/r-michelle-tsang-500721-unsplash-min.jpg" alt="">
-                  <img src="../../assets/images/quick-summer-drink-460x295.jpg" alt="">
-                  <img src="../../assets/images/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg" alt="">
-                  <img src="../../assets/images/perfect-cosmopolitan-460x295.jpg" alt="">
-                  <img src="../../assets/images/fi2x-6-460x295.jpg" alt="">
-                  <img src="../../assets/images/r-brooke-lark-96398-unsplash-min-460x295.jpg" alt="">
+                <div>
+                    <img src="../../assets/images/Mixed-fruits.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Fruit Platter with Banana, Mango, Berries and Orange</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/r-rachel-park-366508-unsplash-min.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Beautiful breakfast of my dreams</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/r-michelle-tsang-500721-unsplash-min.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Magic Icecreams balls: chocolate's secret</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/quick-summer-drink-460x295.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Top 10 Best Summer Cocktails</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/r-maarten-van-den-heuvel-400626-unsplash-min-460x295.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Vegetables is the future</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/perfect-cosmopolitan-460x295.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Love drinks list</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/fi2x-6-460x295.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Heathy food ever</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../assets/images/r-brooke-lark-96398-unsplash-min-460x295.jpg" alt="">
+                    <div class="hover-img-link">
+                        <img src="../../assets/icons/link.svg" alt="">
+                        <p>Sweet Morning with your Partner</p>
+                    </div>
+                </div>
               </div>
 
           </div>
@@ -106,10 +154,11 @@ export default {
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: space-between;
-        img{
+        & > div{
+            position: relative;
             height: 165px;
             width: calc(50% - 15px);
-            object-fit: cover;
+            img{@include fit-cover}
         }
     }
 }
