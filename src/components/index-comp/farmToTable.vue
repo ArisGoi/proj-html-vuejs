@@ -37,12 +37,12 @@
                   </div>
                 </div>
 
-                <cardSmall img="fi-roundup.jpg" title="Roundup: My New Favorite Recipes For Healthy Living" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="fi-korean-food.jpg" title="Meal Prep: Korean Bibimbap with Kimchi" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="fi-toasts.jpg" title="Why These Toasts with Tea are My New Favorite" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="fi-street-food.jpg" title="Exploring Street Food in Bangkok" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="fi-organic-breakfast.jpg" title="Organic Choices For Healthier Living" authorDate="By admin | March 25th, 2019"/>
-                <cardSmall img="fi-water-side-rest.jpg" title="5 Waterside Restaurants in Istanbul for Special Events" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall class="cardSmall" img="fi-roundup.jpg" title="Roundup: My New Favorite Recipes For Healthy Living" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall class="cardSmall" img="fi-korean-food.jpg" title="Meal Prep: Korean Bibimbap with Kimchi" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall class="cardSmall" img="fi-toasts.jpg" title="Why These Toasts with Tea are My New Favorite" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall class="cardSmall" img="fi-street-food.jpg" title="Exploring Street Food in Bangkok" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall class="cardSmall" img="fi-organic-breakfast.jpg" title="Organic Choices For Healthier Living" authorDate="By admin | March 25th, 2019"/>
+                <cardSmall class="cardSmall" img="fi-water-side-rest.jpg" title="5 Waterside Restaurants in Istanbul for Special Events" authorDate="By admin | March 25th, 2019"/>
 
                 <button class="btn-2">Load More Posts</button>
             </div>
@@ -133,6 +133,10 @@ export default {
         &:first-child{
             margin-top: 0px;
         }
+    }
+
+    .cardSmall{
+        max-width: calc(50% - 15px);
     }
 
     .big-article{
