@@ -50,6 +50,10 @@ export default {
       background-color: $c-bw-4;
       @include flex-center;
       padding: 8px;
+
+      img{
+        width: 100%;
+      }
     }
   }
 }
