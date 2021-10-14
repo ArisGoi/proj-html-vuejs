@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header/>
+    <Header :pages="pageList"/>
 
     <main>
       <Hero/>
@@ -11,7 +11,7 @@
       <farmToTable/>
     </main>
 
-    <Footer/>
+    <Footer :pages="pageList"/>
   </div>
 </template>
 
@@ -35,6 +35,42 @@ export default {
     culinaryCollection,
     farmToTable,
     Footer,
+  },
+  data(){
+    return{
+      pageList:[
+        {
+          name: 'Home',
+          url: '#',
+          current: true,
+        },
+        {
+          name: 'Recipes',
+          url: '#',
+          current: false,
+        },
+        {
+          name: 'Places',
+          url: '#',
+          current: false,
+        },
+        {
+          name: 'Blog',
+          url: '#',
+          current: false,
+        },
+        {
+          name: 'About',
+          url: '#',
+          current: false,
+        },
+        {
+          name: 'Contact',
+          url: '#',
+          current: false,
+        },
+      ],
+    }
   }
 }
 </script>

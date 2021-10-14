@@ -33,15 +33,11 @@
             </a></li>
           </ul>
         </div>
-        <div class="block">
+        <nav class="block">
           <ul>
-            <li><a href="">Recipes</a></li>
-            <li><a href="">Places</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+            <li v-for="(page, index) in pages" :key="index" :class="page.current ? 'd-none' : null "><a :href="page.url">{{page.name}}</a></li>
           </ul>
-        </div>
+        </nav>
         <div class="block">
           <h3>Contact</h3>
           <ul class="businessC">
@@ -83,15 +79,15 @@ export default {
   name: 'Footer',
   components:{
     FooterHero,
+  },
+  props: {
+    pages: Array
   }
-  // props: {
-  //   msg: String
-  // }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/style/variables.scss';
+@import '../assets/style/style.scss';
 
 footer{
   margin-top: 40px;

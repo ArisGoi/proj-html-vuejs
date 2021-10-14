@@ -6,12 +6,7 @@
 
     <nav class="nav">
       <ul>
-        <li class="current">Home</li>
-        <li>Recipes</li>
-        <li>Places</li>
-        <li>Blog</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li v-for="(page, index) in pages" :key="index" :class="page.current ? 'current' : null "><a :href="page.url" @click="setCurrent(pages, index)">{{page.name}}</a></li>
         <li><img src="../assets/icons/search.svg" height="15" alt=""></li>
       </ul>
     </nav>
@@ -21,9 +16,20 @@
 <script>
 export default {
   name: 'Header',
-  // props: {
-  //   msg: String
-  // }
+  props: {
+    pages: Array
+  },
+  methods:{
+    setCurrent: (element, index) => {
+      element.forEach((elm, i) => {
+        if(i == index){
+          elm.current = true;
+        } else{
+          elm.current = false;
+        }
+      });
+    }
+  }
 }
 </script>
 
@@ -51,6 +57,11 @@ header{
   .nav{
     background-color: $white;
     height: 65px;
+
+    a{
+      color: $nav-text;
+      text-decoration: none;
+    }
 
     ul{
       list-style: none;
