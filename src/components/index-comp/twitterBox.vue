@@ -2,6 +2,7 @@
   <section id="twitterBox">
     <div class="title-row">
       <h3>Tweets <span>by</span> <a href="">@Theme_Fusion</a></h3>
+      <img src="../../assets/icons/info.svg" alt="">
     </div>
     <div class="content-row">
       <div>
@@ -13,6 +14,7 @@
         <p>
           Do you need a sublime WordPress hosting for your next website? Take advantage of exclusive partner offers that we have secured just for you, & launch your site in seconds with <a href="https://twitter.com/search?q=%23avada&src=typed_query&f=live" target="_blank">#avada</a> on WP Engine hosting & get 30% Off this Black Friday <a href="bit.ly/3kjLLE2" target="_blank">bit.ly/3kjLLE2</a> <a href="https://twitter.com/search?q=%23blackfriday2020" target="_blank">#BlackFriday2020</a>
         </p>
+        <img src="../../assets/icons/twitter-light.svg" alt="">
       </div>
     </div>
     <div class="img-box">
@@ -53,6 +55,7 @@ export default {
   }
 }
 .title-row{
+  position: relative;
   h3{
     @include sans400;
     font-size: 1.375rem;
@@ -61,17 +64,32 @@ export default {
     font-size: 12px;
     color: $text-gray;
   }
+  img{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
 }
 .content-row{
   display: flex;
   margin-top: 15px;
   @include sans400;
+  position: relative;
 
   div:first-child{
     margin-right: 10px;
     img{
       max-width: 35px;
     }
+  }
+  div:last-child img:last-child{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    right: 10px;
   }
   h4{
     @include sans600;
@@ -90,7 +108,7 @@ export default {
 .actions-row{
   margin: 10px 0;
   display: flex;
-  span{margin-left: auto;}
+  span{margin-left: auto; color: $text-gray;}
   button{
     margin-right: 10px;
     background-color: transparent;
