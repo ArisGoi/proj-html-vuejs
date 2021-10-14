@@ -69,6 +69,8 @@
                 <socialBox/>
 
                 <reviews/>
+
+                <twitterBox/>
             </div>
         </div>
 
@@ -81,6 +83,7 @@ import cardSmall from './cardSmall.vue'
 import searchBar from './search.vue'
 import socialBox from './socialBox.vue'
 import reviews from './reviews.vue'
+import twitterBox from './twitterBox.vue'
 
 export default {
   name: 'farmToTable',
@@ -89,6 +92,7 @@ export default {
       searchBar,
       socialBox,
       reviews,
+      twitterBox,
   },
   // props: {
   //   msg: String
