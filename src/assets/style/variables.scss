@@ -1,6 +1,11 @@
 
 // COLORS PALETTE
-$c-main: #fc7525; //Orange
+$c-main: rgba(252,117,37,1); //Orange #fc7525
+$gr-c-main: linear-gradient(
+    180deg,
+    rgba(252,117,37,0.6) 0%,
+    rgba(252,117,37,1) 55%
+    );
 
 $white: #fff;
 
